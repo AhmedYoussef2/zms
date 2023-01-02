@@ -1,12 +1,14 @@
 package logic;
 
+import javafx.scene.image.Image;
+
 public class Lion extends Animal{
     
     public Lion() {
     }
 
-    public Lion(String info, String specie ,int cageno ,String name) {
-        super(info, specie, cageno,name);
+    public Lion(String info, String specie ,int cageno ,String name,Image anImage) {
+        super(info, specie, cageno,name,anImage);
     }
 
     @Override
@@ -51,6 +53,16 @@ public class Lion extends Animal{
     public String getName() {
         
         return "lion";
+    }
+    @Override
+    public void setImage(Image anImage) {
+        this.anImage=anImage;
+    }
+
+    @Override
+    public Image getAnImage() {
+        Image clasImage=new Image(getClass().getResourceAsStream("/logic/lion.jpg"));
+        return clasImage;
     }
     
     

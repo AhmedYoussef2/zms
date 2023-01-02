@@ -1,12 +1,14 @@
 package logic;
 
+import javafx.scene.image.Image;
+
 public class Giraffe extends Animal {
     
     public Giraffe() {
     }
     
-    public Giraffe(String info, String specie ,int cageno,String name) {
-        super(info, specie,cageno,name);
+    public Giraffe(String info, String specie ,int cageno,String name,Image animage) {
+        super(info, specie,cageno,name,animage);
     }
 
     @Override
@@ -50,6 +52,17 @@ public class Giraffe extends Animal {
     public String getName() {
         
         return "Giraffe";
+    }
+
+    @Override
+    public void setImage(Image anImage) {
+        this.anImage=anImage;
+    }
+
+    @Override
+    public Image getAnImage() {
+        Image clasImage=new Image(getClass().getResourceAsStream("/logic/giraffe.jpg"));
+        return clasImage;
     }
     
     

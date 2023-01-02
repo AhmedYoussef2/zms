@@ -1,16 +1,19 @@
 package logic;
-    public  abstract class Animal {
+
+import javafx.scene.image.Image;
+
+public  abstract class Animal {
         protected String info;
         protected int cageno;
         protected String specie;
         protected String name;
-
+        protected Image anImage;
     
         public Animal() {
         }
        
     
-        public Animal(String info, String specie ,int cageno,String name) {
+        public Animal(String info, String specie ,int cageno,String name,Image anImage) {
             this.info = info;
             this.specie = specie;
             this.cageno=cageno;
@@ -35,6 +38,9 @@ package logic;
 
         public abstract String getName();
            
+        public abstract void setImage(Image anImage);
+
+        public abstract Image getAnImage();
         
     }
     

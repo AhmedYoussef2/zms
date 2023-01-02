@@ -71,7 +71,7 @@
       </Pane>
       <Pane layoutX="194.0" layoutY="54.0" prefHeight="306.0" prefWidth="374.0" style="-fx-background-color: #FFFFFF;">
          <children>
-            <ImageView fitHeight="110.0" fitWidth="200.0" layoutX="115.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="animalimage" fitHeight="110.0" fitWidth="200.0" layoutX="115.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="lion.jpg" />
                </image>

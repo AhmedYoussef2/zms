@@ -1,12 +1,14 @@
 package logic;
 
- public class Zebra extends Animal {
+import javafx.scene.image.Image;
+
+public class Zebra extends Animal {
     
     public Zebra() {
     }
         
-    public Zebra(String info, String specie ,int cageno,String name) {
-        super(info, specie,cageno,name);
+    public Zebra(String info, String specie ,int cageno,String name,Image anImage) {
+        super(info, specie,cageno,name,anImage);
     }
 
     @Override
@@ -50,6 +52,16 @@ package logic;
     public String getName() {
         
         return "Zebra";
+    }
+    @Override
+    public void setImage(Image anImage) {
+        this.anImage=anImage;
+    }
+
+    @Override
+    public Image getAnImage() {
+        Image clasImage=new Image(getClass().getResourceAsStream("/com/zebra.jpg"));
+        return clasImage;
     }
     
 }
