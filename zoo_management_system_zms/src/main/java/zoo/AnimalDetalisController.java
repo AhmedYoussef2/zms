@@ -25,16 +25,56 @@ public class AnimalDetalisController {
     Label  specielabel;
 
 
-    public void setAnimalDetails(){
-        Lion lion=new Lion();
-        cagenolabel.setText(Integer.toString(lion.getCageno()));
-        namelabel.setText(lion.getName());
-        infolabel.setText(lion.getInfo());
-        specielabel.setText(lion.getSpecie());
+    public void setAnimalDetails(String srarchArg ){
+        if (srarchArg.equals("Lion")){
+                Lion lion=new Lion();
+                cagenolabel.setText(Integer.toString(lion.getCageno()));
+                namelabel.setText(lion.getName());
+                infolabel.setText(lion.getInfo());
+                specielabel.setText(lion.getSpecie());
+            
+            
+         }
+            else if (srarchArg.equals("Griaffe")){
+                Giraffe giraffe=new Giraffe();
+                cagenolabel.setText(Integer.toString(giraffe.getCageno()));
+                namelabel.setText(giraffe.getName());
+                infolabel.setText(giraffe.getInfo());
+                specielabel.setText(giraffe.getSpecie());  
+         
+         }
+           else if (srarchArg.equals("Monkey")){
+                Monkey monkey=new Monkey();
+                cagenolabel.setText(Integer.toString(monkey.getCageno()));
+                namelabel.setText(monkey.getName());
+                infolabel.setText(monkey.getInfo());
+                specielabel.setText(monkey.getSpecie());             
+    
+         }
+            else if(srarchArg.equals("Tiger")) 
+            {
+                Tiger tiger=new Tiger();
+                cagenolabel.setText(Integer.toString(tiger.getCageno()));
+                namelabel.setText(tiger.getName());
+                infolabel.setText(tiger.getInfo());
+                specielabel.setText(tiger.getSpecie());             
 
+         }
+            else if (srarchArg.equals("Zebra")){
+                Zebra zebra = new Zebra();
+                cagenolabel.setText(Integer.toString(zebra.getCageno()));
+                namelabel.setText(zebra.getName());
+                infolabel.setText(zebra.getInfo());
+                specielabel.setText(zebra.getSpecie());             
+    
         }
-       
-
+        else{
+            cagenolabel.setText("unknown");
+            namelabel.setText("unknown");
+            infolabel.setText("This animal will be here soon.");
+            specielabel.setText("unknown");    
+           }
+        }
 
 
     @FXML
