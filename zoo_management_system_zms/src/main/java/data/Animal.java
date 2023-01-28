@@ -1,4 +1,4 @@
-package logic;
+package data;
 
 import javafx.scene.image.Image;
 

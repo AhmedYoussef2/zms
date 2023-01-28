@@ -1,8 +1,8 @@
 package zoo;
 
-import logic.*;
 import java.io.IOException;
 
+import data.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,27 +16,27 @@ import javafx.stage.Stage;
 public class SearchController extends AnimalDetalisController {
 
     @FXML
-    TextField searchfield;
+    TextField searchField;
 
     String searchValue;
 
     
     private void search() {
 
-        if (searchfield.getText().equals("Lion")) {
+        if (searchField.getText().equals("Lion")) {
 
             searchValue = "Lion";
             // return searchValue;
             // System.out.println(1);
 
-        } else if (searchfield.getText().equals("Monkey")) {
+        } else if (searchField.getText().equals("Monkey")) {
 
             searchValue="Monkey";
             // return  searchValue;
             // System.out.println(2);
 
 
-        } else if (searchfield.getText().equals("Giraffe")) {
+        } else if (searchField.getText().equals("Giraffe")) {
 
             searchValue="Giraffe";
             // return searchValue;
@@ -44,14 +44,14 @@ public class SearchController extends AnimalDetalisController {
 
 
 
-        } else if (searchfield.getText().equals("Tiger")) {
+        } else if (searchField.getText().equals("Tiger")) {
 
             searchValue="Tiger";
             // return searchValue;
             // System.out.println(4);
 
 
-        }else if (searchfield.getText().equals("Zebra")) {
+        }else if (searchField.getText().equals("Zebra")) {
             
             searchValue="Zebra";
             // return searchValue;
@@ -115,7 +115,7 @@ public class SearchController extends AnimalDetalisController {
     }
 
     @FXML
-    private void switchToIickets(ActionEvent event) throws IOException {
+    private void switchToTickets(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("tickets.fxml"));
         Parent root = loader.load();
 
@@ -142,8 +142,8 @@ public class SearchController extends AnimalDetalisController {
     @FXML
     Label usersearch;
 
-    public void welcomeuser(String wellcome) {
-        usersearch.setText(wellcome);
+    public void welcomeUser(String welcome) {
+        usersearch.setText(welcome);
     }
 
 }

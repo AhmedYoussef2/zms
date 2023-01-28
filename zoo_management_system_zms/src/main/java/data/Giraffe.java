@@ -1,14 +1,14 @@
-package logic;
+package data;
 
 import javafx.scene.image.Image;
 
-public class Monkey extends Animal{
+public class Giraffe extends Animal {
     
-    public Monkey() {
+    public Giraffe() {
     }
     
-    public Monkey(String info, String specie ,int cageno,String name,Image anImage) {
-        super(info, specie,cageno ,name,anImage);
+    public Giraffe(String info, String specie ,int cageno,String name,Image animage) {
+        super(info, specie,cageno,name,animage);
     }
 
     @Override
@@ -19,9 +19,9 @@ public class Monkey extends Animal{
     @Override
     public String getInfo() {
         return "The info : \n"+
-                 "is a common name that may refer to most mammals of the infraorder Simiiformes,\n" +
-                 "also known as the simians. Traditionally, all animals in the group now known as\n" +
-                        " simians are counted as monkeys except the apes, which constitutes an incomplete\n"; 
+                "is a large African hoofed mammal belonging to the genus Giraffa. It is the \n"+
+                "tallest living terrestrial animal and the largest ruminant on Earth. Traditionally,\n" +
+                "giraffes were thought to be one species, Giraffa camelopardalis, with nine subspecies. \n";
     }
 
     @Override
@@ -31,9 +31,8 @@ public class Monkey extends Animal{
 
     @Override
     public String getSpecie() {
-        return "The specie of monkey is : Callitrichidae\n";
+        return "The specie of Giraffes is : giraffes\n";
     }
-
     @Override 
     public void setCageno(int cageno){
         this.cageno=cageno;
@@ -41,7 +40,7 @@ public class Monkey extends Animal{
 
     @Override 
     public int getCageno(){
-        return 2;
+        return 5;
     }
 
     @Override
@@ -52,9 +51,9 @@ public class Monkey extends Animal{
     @Override
     public String getName() {
         
-        return "Monkey";
+        return "Giraffe";
     }
-    
+
     @Override
     public void setImage(Image anImage) {
         this.anImage=anImage;
@@ -62,8 +61,9 @@ public class Monkey extends Animal{
 
     @Override
     public Image getAnImage() {
-        Image clasImage=new Image(getClass().getResourceAsStream("/logic/monkey.jpg"));
+        Image clasImage=new Image(getClass().getResourceAsStream("/logic/giraffe.jpg"));
         return clasImage;
     }
+    
     
 }

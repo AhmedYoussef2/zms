@@ -11,7 +11,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage; 
 
-public class LoginPageController {
+public class LogInPageController {
     @FXML
     TextField username;
 
@@ -21,7 +21,7 @@ public class LoginPageController {
     @FXML
     private void switchToHomePage(ActionEvent event) throws IOException {
         
-        String wellcome =username.getText();
+        String welcome =username.getText();
         
         FXMLLoader loader=new FXMLLoader(getClass().getResource("homePage.fxml"));
         Parent root=loader.load();
@@ -32,7 +32,7 @@ public class LoginPageController {
         stage.show();
         
         HomePageController homePageController=loader.getController();
-        homePageController.welcomeuser("hello "+ wellcome);
+        homePageController.welcomeUser("hello "+ welcome);
 
     }
     

@@ -1,7 +1,8 @@
 package zoo;
 
-import logic.*;
 import java.io.IOException;
+
+import data.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

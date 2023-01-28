@@ -22,7 +22,7 @@ public class HomePageController  {
     @FXML
     private void switchToSearch(ActionEvent event) throws IOException {
         
-        String wellcome =user.getText();
+        String welcome =user.getText();
 
         FXMLLoader loader=new FXMLLoader(getClass().getResource("search.fxml"));
         Parent root=loader.load();
@@ -34,7 +34,7 @@ public class HomePageController  {
 
         
         SearchController searchController =loader.getController();
-        searchController.welcomeuser(wellcome);
+        searchController.welcomeUser(welcome);
     }
     
    
@@ -77,8 +77,8 @@ public class HomePageController  {
    }
 
 
-   public void welcomeuser(String wellcome){
-    user.setText(wellcome);
+   public void welcomeUser(String welcome){
+    user.setText(welcome);
    }
     
 }

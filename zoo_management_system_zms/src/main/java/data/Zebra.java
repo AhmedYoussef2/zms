@@ -1,14 +1,14 @@
-package logic;
+package data;
 
 import javafx.scene.image.Image;
 
-public class Giraffe extends Animal {
+public class Zebra extends Animal {
     
-    public Giraffe() {
+    public Zebra() {
     }
-    
-    public Giraffe(String info, String specie ,int cageno,String name,Image animage) {
-        super(info, specie,cageno,name,animage);
+        
+    public Zebra(String info, String specie ,int cageno,String name,Image anImage) {
+        super(info, specie,cageno,name,anImage);
     }
 
     @Override
@@ -18,10 +18,10 @@ public class Giraffe extends Animal {
 
     @Override
     public String getInfo() {
-        return "The info : \n"+
-                "is a large African hoofed mammal belonging to the genus Giraffa. It is the \n"+
-                "tallest living terrestrial animal and the largest ruminant on Earth. Traditionally,\n" +
-                "giraffes were thought to be one species, Giraffa camelopardalis, with nine subspecies. \n";
+        return"The info : \n" +
+                "  are African equines with distinctive black-and-white striped coats. \n"
+                + "There are three living species: the Grévy's zebra (Equus grevyi), plains zebra \n"
+                + "(E. quagga), and the mountain zebra (E. zebra). Zebras share the genus Equus with horses and asses.\n ";
     }
 
     @Override
@@ -31,7 +31,7 @@ public class Giraffe extends Animal {
 
     @Override
     public String getSpecie() {
-        return "The specie of Giraffes is : giraffes\n";
+        return "The specie of Zebras is : Equid\n";
     }
     @Override 
     public void setCageno(int cageno){
@@ -40,7 +40,7 @@ public class Giraffe extends Animal {
 
     @Override 
     public int getCageno(){
-        return 5;
+        return 4;
     }
 
     @Override
@@ -51,9 +51,8 @@ public class Giraffe extends Animal {
     @Override
     public String getName() {
         
-        return "Giraffe";
+        return "Zebra";
     }
-
     @Override
     public void setImage(Image anImage) {
         this.anImage=anImage;
@@ -61,9 +60,8 @@ public class Giraffe extends Animal {
 
     @Override
     public Image getAnImage() {
-        Image clasImage=new Image(getClass().getResourceAsStream("/logic/giraffe.jpg"));
+        Image clasImage=new Image(getClass().getResourceAsStream("/com/zebra.jpg"));
         return clasImage;
     }
-    
     
 }
