@@ -7,8 +7,8 @@ public class Zebra extends Animal {
     public Zebra() {
     }
         
-    public Zebra(String info, String specie ,int cageno,String name,Image anImage) {
-        super(info, specie,cageno,name,anImage);
+    public Zebra(String info, String specie ,int cageNo,String name,Image anImage) {
+        super(info, specie,cageNo,name,anImage);
     }
 
     @Override
@@ -34,12 +34,12 @@ public class Zebra extends Animal {
         return "The specie of Zebras is : Equid\n";
     }
     @Override 
-    public void setCageno(int cageno){
-        this.cageno=cageno;
+    public void setCageNo(int cageNo){
+        this.cageNo=cageNo;
     }
 
     @Override 
-    public int getCageno(){
+    public int getCageNo(){
         return 4;
     }
 

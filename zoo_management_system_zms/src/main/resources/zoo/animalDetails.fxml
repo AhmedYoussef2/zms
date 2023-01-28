@@ -21,7 +21,7 @@
       </Pane>
       <Pane layoutX="391.0" layoutY="104.0" prefHeight="555.0" prefWidth="938.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="391.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="104.0">
          <children>
-            <Label id="Cage Number:" layoutX="87.0" layoutY="304.0" text="Cage Number:">
+            <Label id="cageNumber:" layoutX="87.0" layoutY="304.0" text="Cage Number:">
                <font>
                   <Font size="14.0" />
                </font>
@@ -31,32 +31,32 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="Description:" layoutX="85.0" layoutY="421.0" prefHeight="20.0" prefWidth="76.0" text="Description:">
+            <Label id="description" layoutX="85.0" layoutY="421.0" prefHeight="20.0" prefWidth="76.0" text="Description:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="Name:" layoutX="88.0" layoutY="343.0" text="Name:">
+            <Label id="name" layoutX="88.0" layoutY="343.0" text="Name:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="DescriptionLabel" layoutX="170.0" layoutY="418.0" prefHeight="29.0" prefWidth="562.0" text="DescriptionLabel">
+            <Label id="descriptionLabel" layoutX="170.0" layoutY="418.0" prefHeight="29.0" prefWidth="562.0" text="DescriptionLabel">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="NameLabel" layoutX="139.0" layoutY="345.0" text="NameLabel">
+            <Label id="nameLabel" layoutX="139.0" layoutY="345.0" text="NameLabel">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="CageNumLabel" layoutX="187.0" layoutY="307.0" text="CageNumLabel">
+            <Label id="cageNumLabel" layoutX="187.0" layoutY="307.0" text="CageNumLabel">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="Specie:" layoutX="87.0" layoutY="380.0" text="Specie:">
+            <Label id="specie:" layoutX="87.0" layoutY="380.0" text="Specie:">
                <font>
                   <Font size="14.0" />
                </font>

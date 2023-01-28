@@ -7,8 +7,8 @@ public class Giraffe extends Animal {
     public Giraffe() {
     }
     
-    public Giraffe(String info, String specie ,int cageno,String name,Image animage) {
-        super(info, specie,cageno,name,animage);
+    public Giraffe(String info, String specie ,int cageNo,String name,Image anImage) {
+        super(info, specie,cageNo,name,anImage);
     }
 
     @Override
@@ -34,12 +34,12 @@ public class Giraffe extends Animal {
         return "The specie of Giraffes is : giraffes\n";
     }
     @Override 
-    public void setCageno(int cageno){
-        this.cageno=cageno;
+    public void setCageNo(int cageNo){
+        this.cageNo=cageNo;
     }
 
     @Override 
-    public int getCageno(){
+    public int getCageNo(){
         return 5;
     }
 

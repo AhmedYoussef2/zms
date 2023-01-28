@@ -7,8 +7,8 @@ public class Tiger extends Animal {
     public Tiger() {
     }
 
-    public Tiger(String info, String specie, int cageno, String name, Image anImage) {
-        super(info, specie, cageno, name, anImage);
+    public Tiger(String info, String specie, int cageNo, String name, Image anImage) {
+        super(info, specie, cageNo, name, anImage);
     }
 
     @Override
@@ -35,12 +35,12 @@ public class Tiger extends Animal {
     }
 
     @Override
-    public void setCageno(int cageno) {
-        this.cageno = cageno;
+    public void setCageNo(int cageNo) {
+        this.cageNo = cageNo;
     }
 
     @Override
-    public int getCageno() {
+    public int getCageNo() {
         return 3;
     }
 

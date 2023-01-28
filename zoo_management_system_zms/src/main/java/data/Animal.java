@@ -4,7 +4,7 @@ import javafx.scene.image.Image;
 
 public  abstract class Animal {
         protected String info;
-        protected int cageno;
+        protected int cageNo;
         protected String specie;
         protected String name;
         protected Image anImage;
@@ -13,10 +13,10 @@ public  abstract class Animal {
         }
        
     
-        public Animal(String info, String specie ,int cageno,String name,Image anImage) {
+        public Animal(String info, String specie ,int cageNo,String name,Image anImage) {
             this.info = info;
             this.specie = specie;
-            this.cageno=cageno;
+            this.cageNo=cageNo;
             this.name=name;
         }
     
@@ -30,9 +30,9 @@ public  abstract class Animal {
     
         public abstract String getSpecie();
          
-        public abstract void setCageno(int cageno);
+        public abstract void setCageNo(int cageNo);
     
-        public abstract int getCageno();
+        public abstract int getCageNo();
 
         public abstract void setName(String name);
 
