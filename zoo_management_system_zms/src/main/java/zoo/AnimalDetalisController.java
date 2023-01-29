@@ -127,6 +127,8 @@ public class AnimalDetalisController {
         Parent ticketsParent = ticketsFxmlLoader.load();
         Scene ticketsScene = new Scene(ticketsParent);
         App.secondaryStage.setScene(ticketsScene);
+        TicketsController dateObject=new TicketsController();
+        dateObject.setDate();
 
     }
 

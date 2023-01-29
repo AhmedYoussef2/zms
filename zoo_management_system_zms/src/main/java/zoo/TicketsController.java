@@ -1,6 +1,8 @@
 package zoo;
 
 import java.io.IOException;
+import java.util.Date;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -66,7 +68,7 @@ public class TicketsController {
         // stage.setScene(scene);
         // stage.show();
 
-        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("sreach.fxml"));
+        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("search.fxml"));
         Parent searchParent = searchFxmlLoader.load();
         Scene searchScene = new Scene(searchParent);
         App.secondaryStage.setScene(searchScene);
@@ -105,7 +107,63 @@ public class TicketsController {
         Parent ticketsParent = ticketsFxmlLoader.load();
         Scene ticketsScene = new Scene(ticketsParent);
         App.secondaryStage.setScene(ticketsScene);
+        setDate();
 
+    }
+
+    public void setDate(){
+        Date date=new Date();  
+        String dateOutput=date.toString();
+        dateLable.setText(dateOutput);
+       }
+    
+    Integer initAduNumOfTickets=0;
+    Integer initChiNumOfTickets=0;
+  
+
+    @FXML
+    public void aduNumOfTickIncreaseMethod(){
+        initAduNumOfTickets=initAduNumOfTickets+1;
+        // String numOfTickInecrease=""+initNumOfTickInecrease;
+        aduNumOfTickInput.setText(initAduNumOfTickets.toString());
+        adultTotal.setText(initAduNumOfTickets.toString());
+        Integer priceTimesNumOfTickets=initAduNumOfTickets*120;
+        Integer biTotal=priceTimesNumOfTickets+(initChiNumOfTickets*60);
+        adultTotal.setText(priceTimesNumOfTickets.toString());
+        finalTotal.setText(biTotal.toString());
+    }
+    
+    @FXML
+    public void chilNumOfTickIncreaseMethod(){
+        initChiNumOfTickets=initChiNumOfTickets+1;
+        // String numOfTickInecrease=""+initNumOfTickInecrease;
+        chilNumOfTickeInput.setText(initChiNumOfTickets.toString());
+        Integer priceTimesNumOfTickets=initAduNumOfTickets*60;
+        childTotal.setText(priceTimesNumOfTickets.toString());
+        Integer biTotal=priceTimesNumOfTickets+(initAduNumOfTickets*120);
+        finalTotal.setText(biTotal.toString());
+    }
+
+    @FXML
+    public void aduNumOfTickDecreaseMethod(){
+        initAduNumOfTickets=initAduNumOfTickets-1;
+        // String numOfTickInecrease=""+initNumOfTickInecrease;
+        aduNumOfTickInput.setText(initAduNumOfTickets.toString());
+        Integer priceTimesNumOfTickets=initAduNumOfTickets*120;
+        adultTotal.setText(priceTimesNumOfTickets.toString());
+        Integer biTotal=priceTimesNumOfTickets+(initChiNumOfTickets*60);
+        finalTotal.setText(biTotal.toString());
+    }
+
+    @FXML
+    public void chilNumOfTickDecreaseMethod(){
+        initChiNumOfTickets=initChiNumOfTickets-1;
+        // String numOfTickInecrease=""+initNumOfTickInecrease;
+        chilNumOfTickeInput.setText(initChiNumOfTickets.toString());
+        Integer priceTimesNumOfTickets=initAduNumOfTickets*60;
+        childTotal.setText(priceTimesNumOfTickets.toString());
+        Integer biTotal=priceTimesNumOfTickets+(initAduNumOfTickets*120);
+        finalTotal.setText(biTotal.toString());
     }
 
 }

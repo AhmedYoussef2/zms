@@ -36,7 +36,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button id="printButton" layoutX="453.0" layoutY="373.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #d11b1b;" text="Print" textFill="WHITE" AnchorPane.bottomAnchor="115.80000000000007">
+            <Button id="printButton" layoutX="453.0" layoutY="373.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" styleClass="printButton" text="Print" textFill="WHITE" AnchorPane.bottomAnchor="115.80000000000007">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -46,12 +46,12 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="aduTickPriceLabel" layoutX="338.0" layoutY="174.0" prefHeight="20.0" prefWidth="77.0" text="aduTickPrice" AnchorPane.leftAnchor="338.0" AnchorPane.rightAnchor="607.0" AnchorPane.topAnchor="174.0">
+            <Label id="aduTickPriceLabel" layoutX="338.0" layoutY="174.0" prefHeight="20.0" prefWidth="77.0" text="120$" AnchorPane.leftAnchor="338.0" AnchorPane.rightAnchor="607.0" AnchorPane.topAnchor="174.0">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="chiTickPriceLabel" layoutX="339.0" layoutY="229.0" text="chiTickPrice" AnchorPane.leftAnchor="339.0" AnchorPane.rightAnchor="611.0" AnchorPane.topAnchor="229.0">
+            <Label id="chiTickPriceLabel" layoutX="339.0" layoutY="229.0" text="60$" AnchorPane.leftAnchor="339.0" AnchorPane.rightAnchor="611.0" AnchorPane.topAnchor="229.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -81,24 +81,24 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button id="chiNumOfTickIncreaseButton" layoutX="618.0" layoutY="225.0" mnemonicParsing="false" style="-fx-border-radius: 14px; -fx-border-color: #343aeb; -fx-background-color: #ffffff;" text="+" textFill="#0b12cc">
+            <Button id="chiNumOfTickIncreaseButton" layoutX="618.0" layoutY="225.0" mnemonicParsing="false" onAction="#chilNumOfTickIncreaseMethod" styleClass="numOfTickEditingButtons" text="+" textFill="#0b12cc">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button id="ChiNumOfTickDecreaseButton" layoutX="526.0" layoutY="225.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" style="-fx-border-radius: 14px; -fx-border-color: #343aeb; -fx-background-color: #ffffff;" text="-" textFill="#0b12cc">
+            <Button id="ChiNumOfTickDecreaseButton" layoutX="526.0" layoutY="225.0" mnemonicParsing="false" onAction="#chilNumOfTickDecreaseMethod" prefHeight="31.0" prefWidth="31.0" styleClass="numOfTickEditingButtons" text="-" textFill="#0b12cc">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
             <TextField id="chilNumOfTickeInput" alignment="CENTER" layoutX="573.0" layoutY="227.0" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb34b7;" text="3" />
-            <Button id="aduNumOfTickIncreaseButton" layoutX="618.0" layoutY="171.0" mnemonicParsing="false" style="-fx-border-radius: 14px; -fx-border-color: #343aeb; -fx-background-color: #ffffff;" text="+" textFill="#0b12cc">
+            <Button id="aduNumOfTickIncreaseButton" layoutX="618.0" layoutY="171.0" mnemonicParsing="false" onAction="#aduNumOfTickIncreaseMethod" styleClass="numOfTickEditingButtons" text="+" textFill="#0b12cc">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
             <TextField id="aduNumOfTickInput" alignment="CENTER" layoutX="573.0" layoutY="173.0" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb34b7;" text="3" />
-            <Button id="aduNumOfTickDecreaseButton" layoutX="526.0" layoutY="171.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" style="-fx-border-radius: 14px; -fx-border-color: #343aeb; -fx-background-color: #ffffff;" text="-" textFill="#0b12cc">
+            <Button id="aduNumOfTickDecreaseButton" layoutX="526.0" layoutY="171.0" mnemonicParsing="false" onAction="#aduNumOfTickDecreaseMethod" prefHeight="31.0" prefWidth="31.0" styleClass="numOfTickEditingButtons" text="-" textFill="#0b12cc">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -125,7 +125,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button id="TicketsButton" layoutX="49.0" layoutY="320.0" mnemonicParsing="false" onAction="#switchToIickets" prefHeight="59.0" prefWidth="160.0" styleClass="dashBoardButtons" text="Tickets" textFill="WHITE">
+            <Button id="TicketsButton" layoutX="49.0" layoutY="320.0" mnemonicParsing="false" onAction="#switchToTickets" prefHeight="59.0" prefWidth="160.0" styleClass="dashBoardButtons" text="Tickets" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -145,7 +145,7 @@
                   <Image url="@images/elephant.png" />
                </image>
             </ImageView>
-            <Button id="   LogOutButton" layoutX="49.0" layoutY="379.0" mnemonicParsing="false" onAction="#switchToLoginPage" prefHeight="59.0" prefWidth="160.0" styleClass="dashBoardButtons" text="Logout" textFill="WHITE">
+            <Button id="   LogOutButton" layoutX="49.0" layoutY="379.0" mnemonicParsing="false" onAction="#switchToLogInPage" prefHeight="59.0" prefWidth="160.0" styleClass="dashBoardButtons" text="Logout" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>

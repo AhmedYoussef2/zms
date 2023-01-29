@@ -1,7 +1,7 @@
 package zoo;
 
 import java.io.IOException;
-// import javafx.event.ActionEvent;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 // import javafx.scene.Node;
@@ -66,6 +66,7 @@ public class LogInPageController {
 
     @FXML
     TextField userNameInput;
+    
     @FXML
     PasswordField passwordInput;
 
@@ -77,7 +78,7 @@ public class LogInPageController {
     int v=1;
 
     @FXML
-    private void signUp()throws IOException{
+    private void signUp(ActionEvent event)throws IOException{
           
         if (v==1) {
             user1.username=userNameInput.getText();
@@ -91,7 +92,7 @@ public class LogInPageController {
        }
        else{
 
-            FXMLLoader fxmlLoader2 = new FXMLLoader(App.class.getResource("error.fxml"));
+            FXMLLoader fxmlLoader2 = new FXMLLoader(App.class.getResource("exception.fxml"));
             Parent parent2 = fxmlLoader2.load();
             Scene scene2 = new Scene(parent2);
             Stage stage=new Stage();
@@ -101,35 +102,35 @@ public class LogInPageController {
     }
 
     @FXML
-    private void signIn()throws IOException{
-        String userName =userNameInput.getText();
+    private void signIn(ActionEvent event)throws IOException{
+        // String userName =userNameInput.getText();
         
-        if (userNameInput.getText().equals(initUser.username)||userNameInput.getText().equals(user1.username)||userNameInput.getText().equals(user2.username)) {
-            if (passwordInput.getText().equals(initUser.password)||passwordInput.getText().equals(user1.password)||passwordInput.getText().equals(user2.password)) {
+        // if (userNameInput.getText().equals(initUser.username)||userNameInput.getText().equals(user1.username)||userNameInput.getText().equals(user2.username)) {
+        //     if (passwordInput.getText().equals(initUser.password)||passwordInput.getText().equals(user1.password)||passwordInput.getText().equals(user2.password)) {
                 FXMLLoader homePageFxmlLoader = new FXMLLoader(App.class.getResource("homePage.fxml"));
                 Parent homePageParent = homePageFxmlLoader.load();
                 Scene homePageScene = new Scene(homePageParent);
                 App.secondaryStage.setScene( homePageScene);
-                HomePageController homePageController=homePageFxmlLoader.getController();
-                homePageController.greetingUser(userName);
-            }
-            else{
-            FXMLLoader errorFxmlLoader = new FXMLLoader(App.class.getResource("error.fxml"));
-            Parent errorParent = errorFxmlLoader.load();
-            Scene errorScene = new Scene(errorParent);
-            Stage stage=new Stage();
-            stage.setScene(errorScene);
-            stage.show();
-            }
-        }
-        else{
-            FXMLLoader errorFxmlLoader = new FXMLLoader(App.class.getResource("error.fxml"));
-            Parent errorParent = errorFxmlLoader.load();
-            Scene errorScene = new Scene(errorParent);
-            Stage stage=new Stage();
-            stage.setScene(errorScene);
-            stage.show();
-        }
+                // HomePageController homePageController=homePageFxmlLoader.getController();
+                // homePageController.greetingUser(userName);
+        //     }
+        //     else{
+        //     FXMLLoader errorFxmlLoader = new FXMLLoader(App.class.getResource("exception.fxml"));
+        //     Parent errorParent = errorFxmlLoader.load();
+        //     Scene errorScene = new Scene(errorParent);
+        //     Stage stage=new Stage();
+        //     stage.setScene(errorScene);
+        //     stage.show();
+        //     }
+        // }
+        // else{
+        //     FXMLLoader errorFxmlLoader = new FXMLLoader(App.class.getResource("exception.fxml"));
+        //     Parent errorParent = errorFxmlLoader.load();
+        //     Scene errorScene = new Scene(errorParent);
+        //     Stage stage=new Stage();
+        //     stage.setScene(errorScene);
+        //     stage.show();
+        // }
     }
   
 }

@@ -20,8 +20,8 @@ public class SearchController extends AnimalDetalisController {
 
     String searchValue;
 
-    
-    private void search() {
+    @FXML
+    private void search(ActionEvent event) throws IOException {
 
         if (animalNameInput.getText().equals("Lion")) {
 
@@ -75,7 +75,7 @@ public class SearchController extends AnimalDetalisController {
     @FXML
     private void switchToAnimal(ActionEvent event) throws IOException {
 
-        search();
+        // search();
 
         // FXMLLoader loader = new FXMLLoader(getClass().getResource("animalDetails.fxml"));
         // Parent root = loader.load();
@@ -105,7 +105,7 @@ public class SearchController extends AnimalDetalisController {
         // stage.setScene(scene);
         // stage.show();
 
-        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("sreach.fxml"));
+        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("search.fxml"));
         Parent searchParent = searchFxmlLoader.load();
         Scene searchScene = new Scene(searchParent);
         App.secondaryStage.setScene(searchScene);
@@ -143,6 +143,8 @@ public class SearchController extends AnimalDetalisController {
         Parent ticketsParent = ticketsFxmlLoader.load();
         Scene ticketsScene = new Scene(ticketsParent);
         App.secondaryStage.setScene(ticketsScene);
+        TicketsController dateObject=new TicketsController();
+        dateObject.setDate();
 
     }
 

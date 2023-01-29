@@ -1,6 +1,7 @@
 package zoo;
 
 import java.io.IOException;
+// import java.util.Date;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,7 +24,7 @@ public class HomePageController  {
     @FXML
     private void switchToSearch(ActionEvent event) throws IOException {
         
-        String userName =userNameLabel.getText();
+        // String userName =userNameLabel.getText();
 
         // FXMLLoader loader=new FXMLLoader(getClass().getResource("search.fxml"));
         // Parent root=loader.load();
@@ -32,14 +33,14 @@ public class HomePageController  {
         // Scene scene=new Scene(root);
         // stage.setScene(scene);
         // stage.show();
-        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("sreach.fxml"));
+        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("search.fxml"));
         Parent searchParent = searchFxmlLoader.load();
         Scene searchScene = new Scene(searchParent);
         App.secondaryStage.setScene(searchScene);
 
         
-        SearchController searchController =searchFxmlLoader.getController();
-        searchController.welcomeUser(userName);
+        // SearchController searchController =searchFxmlLoader.getController();
+        // searchController.welcomeUser(userName);
     }
     
    
@@ -75,6 +76,8 @@ public class HomePageController  {
         Parent ticketsParent = ticketsFxmlLoader.load();
         Scene ticketsScene = new Scene(ticketsParent);
         App.secondaryStage.setScene(ticketsScene);
+        TicketsController dateObject=new TicketsController();
+        dateObject.setDate();
 
     }
 
@@ -98,7 +101,7 @@ public class HomePageController  {
 
 
    public void greetingUser(String userName){
-    userNameLabel.setText(userName);
+    // userNameLabel.setText(userName);
    }
     
 }
