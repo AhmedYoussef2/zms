@@ -110,6 +110,8 @@ public class SearchController extends AnimalDetailsController {
         Parent searchParent = searchFxmlLoader.load();
         Scene searchScene = new Scene(searchParent);
         App.secondaryStage.setScene(searchScene);
+        SearchController searchController=searchFxmlLoader.getController();
+        searchController.greetingUser(LogInPageController.userName);
     }
 
     @FXML
@@ -127,7 +129,8 @@ public class SearchController extends AnimalDetailsController {
         Parent homePageParent = homePageFxmlLoader.load();
         Scene homePageScene = new Scene(homePageParent);
         App.secondaryStage.setScene(homePageScene);
-
+        HomePageController homePageController=homePageFxmlLoader.getController();
+        homePageController.greetingUser(LogInPageController.userName);
     }
 
     @FXML
@@ -170,8 +173,8 @@ public class SearchController extends AnimalDetailsController {
     @FXML
     Label userNameLabel;
 
-    public void welcomeUser(String userName) {
-        userNameLabel.setText(userName);
-    }
+    public void greetingUser(String userName){
+        userNameLabel.setText("Hello, "+userName);
+       }
 
 }

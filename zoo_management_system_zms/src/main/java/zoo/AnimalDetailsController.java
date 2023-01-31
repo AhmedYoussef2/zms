@@ -94,6 +94,8 @@ public class AnimalDetailsController {
         Parent searchParent = searchFxmlLoader.load();
         Scene searchScene = new Scene(searchParent);
         App.secondaryStage.setScene(searchScene);
+        SearchController searchController=searchFxmlLoader.getController();
+        searchController.greetingUser(LogInPageController.userName);
     }
 
     @FXML
@@ -111,6 +113,8 @@ public class AnimalDetailsController {
         Parent homePageParent = homePageFxmlLoader.load();
         Scene homePageScene = new Scene(homePageParent);
         App.secondaryStage.setScene(homePageScene);
+        HomePageController homePageController=homePageFxmlLoader.getController();
+        homePageController.greetingUser(LogInPageController.userName);
 
     }
 

@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1440.0" style="-fx-background-color: #ffffff;" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zoo.SearchController">
    <children>
-      <Label id="userNameLabel" layoutX="352.0" layoutY="34.0" prefHeight="20.0" prefWidth="232.0" text="Hello, userNameLabel">
+      <Label fx:id="userNameLabel" layoutX="352.0" layoutY="34.0" prefHeight="20.0" prefWidth="232.0" text="Hello, userNameLabel">
          <font>
             <Font size="18.0" />
          </font>

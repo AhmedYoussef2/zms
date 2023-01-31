@@ -17,7 +17,7 @@
             <Image url="@../images/zoo.jpg" />
          </image>
       </ImageView>
-      <TextField id="userNameInput" focusTraversable="false" layoutX="621.0" layoutY="339.0" prefHeight="26.0" prefWidth="198.0" promptText="Enter User Name" style="-fx-border-color: #08a12c;" AnchorPane.bottomAnchor="353.8" />
+      <TextField fx:id="userNameInput" focusTraversable="false" layoutX="621.0" layoutY="339.0" prefHeight="26.0" prefWidth="198.0" promptText="Enter User Name" style="-fx-border-color: #08a12c;" AnchorPane.bottomAnchor="353.8" />
       <Label layoutX="6.0" layoutY="678.6" prefHeight="38.0" prefWidth="326.0" text="Copyright © 2022-2023. All rights reserved" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="6.0" />
       <Label layoutX="710.0" layoutY="460.0" prefHeight="38.0" prefWidth="20.0" text="Or" AnchorPane.bottomAnchor="221.60000000000002">
          <font>
@@ -35,7 +35,7 @@
          </font>
       </Button>
       <Label layoutX="1243.6" layoutY="679.6" prefHeight="38.0" prefWidth="190.0" text="Designed by (Ahmed Youssef)v1.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="6.0" />
-      <PasswordField id="passwordInput" layoutX="621.0" layoutY="390.0" prefHeight="27.0" prefWidth="198.0" promptText="Enter Password" style="-fx-border-color: #7d34eb;" AnchorPane.bottomAnchor="302.8" />
+      <PasswordField fx:id="passwordInput" layoutX="621.0" layoutY="390.0" prefHeight="27.0" prefWidth="198.0" promptText="Enter Password" style="-fx-border-color: #7d34eb;" AnchorPane.bottomAnchor="302.8" />
    </children>
    <stylesheets>
       <URL value="@style.css" />

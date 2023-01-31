@@ -100,37 +100,38 @@ public class LogInPageController {
             stage.show();
        }
     }
-
+static String userName;
     @FXML
     private void signIn(ActionEvent event)throws IOException{
-        // String userName =userNameInput.getText();
+        userName =userNameInput.getText();
+    
         
-        // if (userNameInput.getText().equals(initUser.username)||userNameInput.getText().equals(user1.username)||userNameInput.getText().equals(user2.username)) {
-        //     if (passwordInput.getText().equals(initUser.password)||passwordInput.getText().equals(user1.password)||passwordInput.getText().equals(user2.password)) {
+        if (userNameInput.getText().equals(initUser.username)||userNameInput.getText().equals(user1.username)||userNameInput.getText().equals(user2.username)) {
+            if (passwordInput.getText().equals(initUser.password)||passwordInput.getText().equals(user1.password)||passwordInput.getText().equals(user2.password)) {
                 FXMLLoader homePageFxmlLoader = new FXMLLoader(App.class.getResource("layouts/homePage.fxml"));
                 Parent homePageParent = homePageFxmlLoader.load();
                 Scene homePageScene = new Scene(homePageParent);
                 App.secondaryStage.setScene( homePageScene);
-                // HomePageController homePageController=homePageFxmlLoader.getController();
-                // homePageController.greetingUser(userName);
-        //     }
-        //     else{
-        //     FXMLLoader errorFxmlLoader = new FXMLLoader(App.class.getResource("exception.fxml"));
-        //     Parent errorParent = errorFxmlLoader.load();
-        //     Scene errorScene = new Scene(errorParent);
-        //     Stage stage=new Stage();
-        //     stage.setScene(errorScene);
-        //     stage.show();
-        //     }
-        // }
-        // else{
-        //     FXMLLoader errorFxmlLoader = new FXMLLoader(App.class.getResource("exception.fxml"));
-        //     Parent errorParent = errorFxmlLoader.load();
-        //     Scene errorScene = new Scene(errorParent);
-        //     Stage stage=new Stage();
-        //     stage.setScene(errorScene);
-        //     stage.show();
-        // }
+                HomePageController homePageController=homePageFxmlLoader.getController();
+                homePageController.greetingUser(userName);
+            }
+            else{
+            FXMLLoader errorFxmlLoader = new FXMLLoader(App.class.getResource("layouts/exception.fxml"));
+            Parent errorParent = errorFxmlLoader.load();
+            Scene errorScene = new Scene(errorParent);
+            Stage stage=new Stage();
+            stage.setScene(errorScene);
+            stage.show();
+            }
+        }
+        else{
+            FXMLLoader errorFxmlLoader = new FXMLLoader(App.class.getResource("layouts/exception.fxml"));
+            Parent errorParent = errorFxmlLoader.load();
+            Scene errorScene = new Scene(errorParent);
+            Stage stage=new Stage();
+            stage.setScene(errorScene);
+            stage.show();
+        }
     }
   
 }
@@ -140,7 +141,7 @@ public class LogInPageController {
  * UserClass
  */
  class UserClass {
-     String username="Ahmed";
+     String username="Ahmed Youssef";
      String password="123456";
 }
     
