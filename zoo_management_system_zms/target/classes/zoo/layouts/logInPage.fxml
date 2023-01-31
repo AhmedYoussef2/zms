@@ -24,12 +24,12 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button id="signInButton" layoutX="612.0" layoutY="464.0" mnemonicParsing="false" onAction="#signIn" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #ffffff;" text="Sign In" textFill="#08a12c" underline="true" AnchorPane.bottomAnchor="225.60000000000002" AnchorPane.leftAnchor="612.0">
+      <Button id="signInButton" layoutX="612.0" layoutY="464.0" mnemonicParsing="false" onAction="#signIn" prefHeight="30.0" prefWidth="74.0" styleClass="signInButton" text="Sign In"  underline="true" AnchorPane.bottomAnchor="225.60000000000002" AnchorPane.leftAnchor="612.0">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button id="signUpButton" layoutX="751.0" layoutY="464.0" mnemonicParsing="false" onAction="#signUp" style="-fx-background-color: #ffffff;" text="Sign Up" textFill="#7d34eb" underline="true" AnchorPane.bottomAnchor="226.39999999999998">
+      <Button id="signUpButton" layoutX="751.0" layoutY="464.0" mnemonicParsing="false" onAction="#signUp" styleClass="signUpButton" text="Sign Up"  underline="true" AnchorPane.bottomAnchor="226.39999999999998">
          <font>
             <Font size="14.0" />
          </font>
@@ -38,7 +38,6 @@
       <PasswordField fx:id="passwordInput" layoutX="621.0" layoutY="390.0" prefHeight="27.0" prefWidth="198.0" promptText="Enter Password" style="-fx-border-color: #7d34eb;" AnchorPane.bottomAnchor="302.8" />
    </children>
    <stylesheets>
-      <URL value="@style.css" />
       <URL value="@../style.css" />
    </stylesheets>
 </AnchorPane>

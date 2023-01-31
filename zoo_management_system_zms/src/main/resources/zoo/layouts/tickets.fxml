@@ -41,27 +41,27 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Label id="adultTotal" layoutX="730.0" layoutY="179.0" prefHeight="20.0" prefWidth="72.0" text="adultTotal" AnchorPane.leftAnchor="730.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="179.0">
+            <Label fx:id="adultTotal" layoutX="730.0" layoutY="179.0" prefHeight="20.0" prefWidth="72.0" text="0 $" AnchorPane.leftAnchor="730.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="179.0">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="aduTickPriceLabel" layoutX="338.0" layoutY="174.0" prefHeight="20.0" prefWidth="77.0" text="120$" AnchorPane.leftAnchor="338.0" AnchorPane.rightAnchor="607.0" AnchorPane.topAnchor="174.0">
+            <Label fx:id="aduTickPriceLabel" layoutX="338.0" layoutY="174.0" prefHeight="20.0" prefWidth="77.0" text="120 $" AnchorPane.leftAnchor="338.0" AnchorPane.rightAnchor="607.0" AnchorPane.topAnchor="174.0">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="chiTickPriceLabel" layoutX="339.0" layoutY="229.0" text="60$" AnchorPane.leftAnchor="339.0" AnchorPane.rightAnchor="611.0" AnchorPane.topAnchor="229.0">
+            <Label fx:id="chiTickPriceLabel" layoutX="339.0" layoutY="229.0" text="60 $" AnchorPane.leftAnchor="339.0" AnchorPane.rightAnchor="611.0" AnchorPane.topAnchor="229.0">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="finalTotal" layoutX="499.0" layoutY="292.0" text="finalTotal" AnchorPane.bottomAnchor="207.20000000000005" AnchorPane.leftAnchor="499.0" AnchorPane.rightAnchor="451.0" AnchorPane.topAnchor="292.0">
+            <Label fx:id="finalTotal" layoutX="499.0" layoutY="292.0" text="0 $" AnchorPane.bottomAnchor="207.20000000000005" AnchorPane.leftAnchor="499.0" AnchorPane.rightAnchor="451.0" AnchorPane.topAnchor="292.0">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label id="childTotal" layoutX="728.0" layoutY="233.0" text="childTotal" AnchorPane.leftAnchor="728.0" AnchorPane.rightAnchor="233.20000000000005" AnchorPane.topAnchor="233.0">
+            <Label fx:id="childTotal" layoutX="728.0" layoutY="233.0" text="0 $" AnchorPane.leftAnchor="728.0" AnchorPane.rightAnchor="233.20000000000005" AnchorPane.topAnchor="233.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -91,19 +91,19 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <TextField id="chilNumOfTickeInput" alignment="CENTER" layoutX="573.0" layoutY="227.0" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb34b7;" text="3" />
+            <TextField fx:id="chilNumOfTickeInput" alignment="CENTER" layoutX="573.0" layoutY="227.0" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb34b7;" text="0" />
             <Button id="aduNumOfTickIncreaseButton" layoutX="618.0" layoutY="171.0" mnemonicParsing="false" onAction="#aduNumOfTickIncreaseMethod" styleClass="numOfTickEditingButtons" text="+" textFill="#0b12cc">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <TextField id="aduNumOfTickInput" alignment="CENTER" layoutX="573.0" layoutY="173.0" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb34b7;" text="3" />
+            <TextField fx:id="aduNumOfTickInput" alignment="CENTER" layoutX="573.0" layoutY="173.0" prefHeight="26.0" prefWidth="30.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb34b7;" text="0" />
             <Button id="aduNumOfTickDecreaseButton" layoutX="526.0" layoutY="171.0" mnemonicParsing="false" onAction="#aduNumOfTickDecreaseMethod" prefHeight="31.0" prefWidth="31.0" styleClass="numOfTickEditingButtons" text="-" textFill="#0b12cc">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Label id="dateLable" layoutX="209.0" layoutY="44.0" text="9:29 PM Tuesday, January 24, 2022 (GMT+2)" />
+            <Label fx:id="dateLable" layoutX="209.0" layoutY="44.0" text="9:29 PM Tuesday, January 24, 2022 (GMT+2)" />
          </children>
       </AnchorPane>
       <Pane layoutX="280.0" layoutY="691.0" prefHeight="30.0" prefWidth="1162.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="277.5999999999999" AnchorPane.rightAnchor="0.0" />

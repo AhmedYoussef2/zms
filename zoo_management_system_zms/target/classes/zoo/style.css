@@ -13,23 +13,45 @@
 
 .numOfTickEditingButtons {
   -fx-border-radius: 14px;
-  -fx-background-radius:30px;
+  -fx-background-radius: 30px;
   -fx-border-color: #343aeb;
   -fx-background-color: #ffffff;
 }
 
-.numOfTickEditingButtons:hover{
+.numOfTickEditingButtons:hover {
   -fx-background-color: #6a5acd;
 }
-.printButton{
+
+.printButton {
   -fx-background-color: #d11b1b;
 }
-.printButton:hover{
+
+.printButton:hover {
   -fx-background-color: #ff4d47;
 }
-.searchFuncButton{
+
+.searchFuncButton {
   -fx-background-color: #4287f5;
 }
-.searchFuncButton:hover{
+
+.searchFuncButton:hover {
   -fx-background-color: #2fb0ff;
+}
+
+.signInButton {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #08a12c;
+}
+
+.signInButton:hover {
+  -fx-text-fill: #a10808;
+}
+
+.signUpButton {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #7d34eb;
+}
+
+.signUpButton:hover {
+  -fx-text-fill: #a10808;
 }

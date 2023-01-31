@@ -147,8 +147,8 @@ public class SearchController extends AnimalDetailsController {
         Parent ticketsParent = ticketsFxmlLoader.load();
         Scene ticketsScene = new Scene(ticketsParent);
         App.secondaryStage.setScene(ticketsScene);
-        TicketsController dateObject=new TicketsController();
-        dateObject.setDate();
+        TicketsController ticketsController=ticketsFxmlLoader.getController();
+        ticketsController.setDate();
 
     }
 

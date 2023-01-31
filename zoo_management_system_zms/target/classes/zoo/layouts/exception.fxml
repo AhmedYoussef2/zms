@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label contentDisplay="CENTER" layoutX="33.0" layoutY="55.0" prefHeight="35.0" prefWidth="407.0" text="some errors occurred in logic batch or subscripts" textAlignment="CENTER">
+      <Label contentDisplay="CENTER" layoutX="33.0" layoutY="55.0" prefHeight="35.0" prefWidth="407.0" text="Some errors occurred in logic batch or subscripts" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>

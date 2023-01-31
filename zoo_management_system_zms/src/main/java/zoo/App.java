@@ -24,7 +24,7 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception{
         // Parent root =FXMLLoader.load(getClass().getResource("logInPage.fxml"));
         // Parent root =FXMLLoader.load(getClass().getResource("search.fxml"));
-        Parent root =FXMLLoader.load(getClass().getResource("layouts/logInPage.fxml"));
+        Parent root =FXMLLoader.load(getClass().getResource("layouts/tickets.fxml"));
         Scene scene=new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -41,6 +41,7 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
         // https://edencoding.com/where-to-put-resource-files-in-javafx/#fxml
+        
     }
 
 }
