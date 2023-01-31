@@ -22,12 +22,13 @@ public class App extends Application {
     
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root =FXMLLoader.load(getClass().getResource("logInPage.fxml"));
+        // Parent root =FXMLLoader.load(getClass().getResource("logInPage.fxml"));
+        Parent root =FXMLLoader.load(getClass().getResource("search.fxml"));
         Scene scene=new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
         primaryStage.setTitle("ZOO MANAGEMENT SYSTEM");
-        Image image =new Image("/appIcon.png");
+        Image image =new Image("appIcon.png");
         // Image image=new Image(getClass().getResourceAsStream("appIcon.jpg"));
         // InputStream stream = new FileInputStream("/zoo/appIcon.jpg");
         // Image image = new Image(stream);

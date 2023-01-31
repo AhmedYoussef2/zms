@@ -61,7 +61,7 @@ public class Lion extends Animal{
 
     @Override
     public Image getAnImage() {
-        Image clasImage=new Image(getClass().getResourceAsStream("/logic/lion.jpg"));
+        Image clasImage=new Image(getClass().getResourceAsStream("lion.jpg"));
         return clasImage;
     }
     

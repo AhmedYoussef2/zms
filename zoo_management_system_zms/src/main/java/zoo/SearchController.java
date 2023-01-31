@@ -13,7 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 // import javafx.stage.Stage;
 
-public class SearchController extends AnimalDetalisController {
+public class SearchController extends AnimalDetailsController {
 
     @FXML
     TextField animalNameInput;
@@ -21,7 +21,7 @@ public class SearchController extends AnimalDetalisController {
     String searchValue;
 
     @FXML
-    private void search(ActionEvent event) throws IOException {
+    private void search() throws IOException {
 
         if (animalNameInput.getText().equals("Lion")) {
 
@@ -75,11 +75,10 @@ public class SearchController extends AnimalDetalisController {
     @FXML
     private void switchToAnimal(ActionEvent event) throws IOException {
 
-        // search();
+        search();
 
         // FXMLLoader loader = new FXMLLoader(getClass().getResource("animalDetails.fxml"));
         // Parent root = loader.load();
-
         // AnimalDetalisController animalDetalisController = loader.getController();
         // animalDetalisController.setAnimalDetails(searchValue);
 
@@ -90,6 +89,8 @@ public class SearchController extends AnimalDetalisController {
 
         FXMLLoader animalDetailsFxmlLoader= new FXMLLoader(App.class.getResource("animalDetails.fxml"));
         Parent animalDetailsParent = animalDetailsFxmlLoader.load();
+        AnimalDetailsController animalDetailsController = animalDetailsFxmlLoader.getController();
+        animalDetailsController.setAnimalDetails(searchValue);
         Scene animalDetailsScene = new Scene(animalDetailsParent);
         App.secondaryStage.setScene(animalDetailsScene); 
 

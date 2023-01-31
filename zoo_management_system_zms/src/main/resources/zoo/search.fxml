@@ -16,12 +16,12 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button id="searchfunctButton" layoutX="718.0" layoutY="339.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="239.0" styleClass="searchFuncButton" text="Search" textFill="WHITE" AnchorPane.bottomAnchor="354.6" AnchorPane.rightAnchor="482.79999999999995">
+      <Button id="searchFunctButton" layoutX="718.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchToAnimal" prefHeight="26.0" prefWidth="239.0" styleClass="searchFuncButton" text="Search" textFill="WHITE" AnchorPane.bottomAnchor="354.6" AnchorPane.rightAnchor="482.79999999999995">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <TextField id="animalNameInput" layoutX="717.0" layoutY="286.0" prefHeight="26.0" prefWidth="246.0" promptText="Enter Animal Name" style="-fx-border-color: #8742f5;" AnchorPane.bottomAnchor="407.6" AnchorPane.rightAnchor="476.6">
+      <TextField fx:id="animalNameInput" layoutX="717.0" layoutY="286.0" prefHeight="26.0" prefWidth="246.0" promptText="Enter Animal Name" style="-fx-border-color: #8742f5;" AnchorPane.bottomAnchor="407.6" AnchorPane.rightAnchor="476.6">
          <font>
             <Font size="14.0" />
          </font>
@@ -64,7 +64,7 @@
                   <Image url="@images/elephant.png" />
                </image>
             </ImageView>
-            <Button id="LogOutButton" layoutX="49.0" layoutY="379.0" mnemonicParsing="false" onAction="#switchToLoginPage" prefHeight="59.0" prefWidth="160.0" styleClass="dashBoardButtons" text="Logout" textFill="WHITE">
+            <Button id="LogOutButton" layoutX="49.0" layoutY="379.0" mnemonicParsing="false" onAction="#switchToLogInPage" prefHeight="59.0" prefWidth="160.0" styleClass="dashBoardButtons" text="Logout" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>

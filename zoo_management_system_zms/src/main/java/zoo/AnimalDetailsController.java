@@ -13,7 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 // import javafx.stage.Stage;
 
-public class AnimalDetalisController {
+public class AnimalDetailsController {
     @FXML
     Label cageNumLabel;
 
@@ -90,7 +90,7 @@ public class AnimalDetalisController {
         // stage.setScene(scene);
         // stage.show();
 
-        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("sreach.fxml"));
+        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("search.fxml"));
         Parent searchParent = searchFxmlLoader.load();
         Scene searchScene = new Scene(searchParent);
         App.secondaryStage.setScene(searchScene);
@@ -115,7 +115,7 @@ public class AnimalDetalisController {
     }
 
     @FXML
-    private void switchToIickets(ActionEvent event) throws IOException {
+    private void switchToTickets(ActionEvent event) throws IOException {
         // FXMLLoader loader = new FXMLLoader(getClass().getResource("tickets.fxml"));
         // Parent root = loader.load();
 
@@ -133,7 +133,7 @@ public class AnimalDetalisController {
     }
 
     @FXML
-    private void switchToLoginPage(ActionEvent event) throws IOException {
+    private void switchToLogInPage(ActionEvent event) throws IOException {
 
         // FXMLLoader loader = new FXMLLoader(getClass().getResource("logInPage.fxml"));
         // Parent root = loader.load();
