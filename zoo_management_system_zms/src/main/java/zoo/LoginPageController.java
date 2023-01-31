@@ -92,7 +92,7 @@ public class LogInPageController {
        }
        else{
 
-            FXMLLoader fxmlLoader2 = new FXMLLoader(App.class.getResource("exception.fxml"));
+            FXMLLoader fxmlLoader2 = new FXMLLoader(App.class.getResource("layouts/exception.fxml"));
             Parent parent2 = fxmlLoader2.load();
             Scene scene2 = new Scene(parent2);
             Stage stage=new Stage();
@@ -107,7 +107,7 @@ public class LogInPageController {
         
         // if (userNameInput.getText().equals(initUser.username)||userNameInput.getText().equals(user1.username)||userNameInput.getText().equals(user2.username)) {
         //     if (passwordInput.getText().equals(initUser.password)||passwordInput.getText().equals(user1.password)||passwordInput.getText().equals(user2.password)) {
-                FXMLLoader homePageFxmlLoader = new FXMLLoader(App.class.getResource("homePage.fxml"));
+                FXMLLoader homePageFxmlLoader = new FXMLLoader(App.class.getResource("layouts/homePage.fxml"));
                 Parent homePageParent = homePageFxmlLoader.load();
                 Scene homePageScene = new Scene(homePageParent);
                 App.secondaryStage.setScene( homePageScene);

@@ -51,7 +51,7 @@ public class TicketsController {
         // stage.setScene(scene);
         // stage.show();
 
-        FXMLLoader logInPageFxmlLoader= new FXMLLoader(App.class.getResource("logInPage.fxml"));
+        FXMLLoader logInPageFxmlLoader= new FXMLLoader(App.class.getResource("layouts/logInPage.fxml"));
         Parent logInPageParent = logInPageFxmlLoader.load();
         Scene logInPageScene = new Scene(logInPageParent);
         App.secondaryStage.setScene(logInPageScene); 
@@ -68,7 +68,7 @@ public class TicketsController {
         // stage.setScene(scene);
         // stage.show();
 
-        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("search.fxml"));
+        FXMLLoader searchFxmlLoader= new FXMLLoader(App.class.getResource("layouts/search.fxml"));
         Parent searchParent = searchFxmlLoader.load();
         Scene searchScene = new Scene(searchParent);
         App.secondaryStage.setScene(searchScene);
@@ -86,7 +86,7 @@ public class TicketsController {
         // stage.setScene(scene);
         // stage.show();
 
-        FXMLLoader homePageFxmlLoader= new FXMLLoader(App.class.getResource("homePage.fxml"));
+        FXMLLoader homePageFxmlLoader= new FXMLLoader(App.class.getResource("layouts/homePage.fxml"));
         Parent homePageParent = homePageFxmlLoader.load();
         Scene homePageScene = new Scene(homePageParent);
         App.secondaryStage.setScene(homePageScene);
@@ -103,7 +103,7 @@ public class TicketsController {
         // stage.setScene(scene);
         // stage.show();
 
-        FXMLLoader ticketsFxmlLoader= new FXMLLoader(App.class.getResource("tickets.fxml"));
+        FXMLLoader ticketsFxmlLoader= new FXMLLoader(App.class.getResource("layouts/tickets.fxml"));
         Parent ticketsParent = ticketsFxmlLoader.load();
         Scene ticketsScene = new Scene(ticketsParent);
         App.secondaryStage.setScene(ticketsScene);

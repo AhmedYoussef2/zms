@@ -62,7 +62,7 @@ public class Monkey extends Animal{
 
     @Override
     public Image getAnImage() {
-        Image clasImage=new Image(getClass().getResourceAsStream("/logic/monkey.jpg"));
+        Image clasImage=new Image(getClass().getResourceAsStream("/zoo/images/monkey.jpg"));
         return clasImage;
     }
     

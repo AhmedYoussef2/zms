@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -9,11 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1440.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zoo.LogInPageController">
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1440.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zoo.LogInPageController">
    <children>
       <ImageView fitHeight="430.0" fitWidth="524.0" layoutX="505.0" layoutY="-83.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="373.0" AnchorPane.leftAnchor="505.0" AnchorPane.rightAnchor="505.0" AnchorPane.topAnchor="-83.0">
          <image>
-            <Image url="@images/zoo.jpg" />
+            <Image url="@../images/zoo.jpg" />
          </image>
       </ImageView>
       <TextField id="userNameInput" focusTraversable="false" layoutX="621.0" layoutY="339.0" prefHeight="26.0" prefWidth="198.0" promptText="Enter User Name" style="-fx-border-color: #08a12c;" AnchorPane.bottomAnchor="353.8" />
@@ -36,4 +37,8 @@
       <Label layoutX="1243.6" layoutY="679.6" prefHeight="38.0" prefWidth="190.0" text="Designed by (Ahmed Youssef)v1.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="6.0" />
       <PasswordField id="passwordInput" layoutX="621.0" layoutY="390.0" prefHeight="27.0" prefWidth="198.0" promptText="Enter Password" style="-fx-border-color: #7d34eb;" AnchorPane.bottomAnchor="302.8" />
    </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@../style.css" />
+   </stylesheets>
 </AnchorPane>

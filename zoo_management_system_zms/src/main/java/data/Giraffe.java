@@ -61,7 +61,7 @@ public class Giraffe extends Animal {
 
     @Override
     public Image getAnImage() {
-        Image clasImage=new Image(getClass().getResourceAsStream("/logic/giraffe.jpg"));
+        Image clasImage=new Image(getClass().getResourceAsStream("/zoo/images/giraffe.jpg"));
         return clasImage;
     }
     

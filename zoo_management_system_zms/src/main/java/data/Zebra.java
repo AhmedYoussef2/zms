@@ -60,7 +60,7 @@ public class Zebra extends Animal {
 
     @Override
     public Image getAnImage() {
-        Image clasImage=new Image(getClass().getResourceAsStream("/com/zebra.jpg"));
+        Image clasImage=new Image(getClass().getResourceAsStream("/zoo/images/zebra.jpg"));
         return clasImage;
     }
     
